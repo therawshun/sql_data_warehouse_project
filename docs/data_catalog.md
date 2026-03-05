@@ -44,3 +44,19 @@ The Gold Layer represents business-ready data for analytics and reporting, organ
 | cost                | INT          | Base price or cost of the product in whole currency units.                 |
 | product_line        | NVARCHAR(50) | Product line or series (for example, `Road`, `Mountain`).                  |
 | start_date          | DATE         |
+
+## Table: gold.fact_sales
+
+**Purpose:** Stores transactional sales data for analytical purposes.
+
+| Column Name   | Data Type    | Description                                                                 |
+| ------------- | ------------ | --------------------------------------------------------------------------- |
+| order_number  | NVARCHAR(50) | Unique alphanumeric identifier for each sales order (for example, `SO54496`). |
+| product_key   | INT          | Surrogate key linking to `gold.dim_products.product_key`.                   |
+| customer_key  | INT          | Surrogate key linking to `gold.dim_customers.customer_key`.                 |
+| order_date    | DATE         | Date when the order was placed.                                             |
+| shipping_date | DATE         | Date when the order was shipped to the customer.                            |
+| due_date      | DATE         | Date when payment for the order was due.                                    |
+| sales_amount  | INT          | Total monetary value of the sale for the line item.                         |
+| quantity      | INT          | Number of product units ordered for the line item.                          |
+| price         | INT          | Price per unit of the product for the line item.                            |
