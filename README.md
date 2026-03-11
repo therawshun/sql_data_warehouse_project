@@ -1,5 +1,7 @@
 # Data Warehouse and Analytics Project
 
+<img width="808" height="471" alt="High Level Architecture drawio" src="https://github.com/user-attachments/assets/f324ad25-3902-43e0-9167-e7a5a031e02c" />
+
 Welcome to the **Data Warehouse and Analytics Project** repository!
 Here I will try and demonstrate a comprehensive data warehousing and analytics solution, from building a data warehouse to genrating actionable insights. Designed as a portfolio project highlighting industry best practices.
 
